@@ -18,7 +18,7 @@ class Region extends Model
 //belongs - Parametro
 //Primero modelo a relacionar
         return $this->belongsto(Continent::class,
-                                "continent_id");
+                            "continent_id");
         //segundo - la FK del modelo a relacionar en el mismo modelo
     }
     public function paises(){

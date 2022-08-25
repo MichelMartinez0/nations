@@ -59,7 +59,9 @@ class Country extends Model
 
         //4 clave foranea de el modelo a relacionar en la tabla intermedia
 
-        return $this->belongsToMany(Languaje::class,'country_languages','country_id','language_id');
+        return $this->belongsToMany(Language::class,'country_languages',
+        'country_id',
+        'language_id')->withPivot('official');
 
     }
 
