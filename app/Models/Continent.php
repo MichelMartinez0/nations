@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Continent extends Model
 {
-    protected $table = "continents";
+    protected $table = "continents"; 
+    
     protected $primaryKey = "continent_id";
 
     use HasFactory;
@@ -19,6 +20,6 @@ class Continent extends Model
         //Primer modelo a relacionar
         return $this-> hasMany( Region::class ,
         //FK  del modelo actual en el modelo a relacionar
-                                "continent_id" );
+                                "continent_id" ); 
     }
 }

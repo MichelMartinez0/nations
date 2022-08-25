@@ -31,6 +31,7 @@ class Country extends Model
     public function region(){
 
         //BelongsTo parametros
+        
 
         //1)modelo a relacionar
 
